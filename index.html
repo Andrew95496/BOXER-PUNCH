@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+   <link rel="shortcut icon" href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0e60d174-fa46-4bad-bde6-ac113144029b/d5gg6zl-a0bf37b8-8754-44ff-b86a-0bed773ffdf1.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBlNjBkMTc0LWZhNDYtNGJhZC1iZGU2LWFjMTEzMTQ0MDI5YlwvZDVnZzZ6bC1hMGJmMzdiOC04NzU0LTQ0ZmYtYjg2YS0wYmVkNzczZmZkZjEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.UvPAzCDkXyFrE2RUGbi2EFoS4zzBjr_mqL7j_gf3oVo" type="image/x-icon">
+    <title>BOXING GAME</title>
+  </head>
+  <body
+    style="
+      background: url('https://images.hdqwalls.com/download/late-afternoon-pixel-art-71-1360x768.jpg')
+        no-repeat center center fixed;
+      background-size: cover; 
+      height: 100%;
+    "
+  >
+    <h1>MY BOXING GAME</h1>
+    <img id="char-1" src="https://forums.homecomingservers.com/uploads/monthly_2020_01/AggressiveMixedGeese-size_restricted.gif.867e6c8f91eede131bf5bf806690b970.gif" alt="">
+    <img id="char-2"  src="./player_model/player2_idle.gif" alt="">
+    <img id="char-3" class="hide" src="./player_model/player2_punch.gif" alt="">
+    <div id="game-screen" class="container">
+      <img
+        id="img"
+        src="https://www.andersonkenya1.net/uploads/monthly_2021_04/Special_Circuit_Super_Punch-Out.png.ca124d5487c87c7caf4b39df4156b322.png"
+        alt="boxer"
+      />
+      <div id="title">
+        <h2 id="inner-title">BOXER PUNCH PUNCH!!!</h2>
+      </div>
+      <div id="score">
+        <h3>
+          <div id="player1">Player 1: <span class="scores1"></span>health</div>
+          <progress id="health1" value="100" max="100"></progress>
+          <div id="player2">Player 2: <span class="scores2"></span>health</div>
+          <progress id="health2" value="100" max="100"></progress>
+          <p id="help">Use buttons below to punch</p>
+        </h3>
+        <div id="btns" class="row">
+          <button id="boxer1" class="dis col btn btn-danger" type="submit">
+            Boxer 1
+          </button>
+          <button id="new-game" class="col btn btn-success" type="submit">
+            New Game
+          </button>
+          <button id="boxer2" class="dis col btn btn-warning text-white" type="submit">
+            Boxer 2
+          </button>
+        </div>
+      </div>
+    </div>
+    <button id="classic" class="dis map classic btn btn-dark" type="submit">Classic</button>
+    <button id="tokyo" class="dis map tokyo btn btn-dark" type="submit">Tokyo</button>
+    <button id="forest" class="dis map forest btn btn-dark" type="submit">Forest</button>
+    <button id="inferno" class="dis map inferno btn btn-dark" type="submit">Inferno</button>
+
+    <img id="volume" title="Mute Music" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/1000px-Speaker_Icon.svg.png" alt="">
+    <img id="settings" title="Mute Music" src="https://cdn-icons-png.flaticon.com/512/126/126472.png" alt="">
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,151 @@
+* {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+  font-family: 'VT323', monospace;
+  overflow: hidden;
+  user-select: none;
+}
+
+input{
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  color: rgb(236, 24, 24);
+  text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#title {
+  text-align: center;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  width: 30rem;
+}
+
+#score {
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  width: 30rem;
+}
+
+h3 {
+  padding: 1rem 2.5rem;
+}
+
+#game-screen {
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30rem;
+  box-shadow: 0.5rem 0.5rem 2rem 1rem rgba(0, 0, 0, 0.26);
+  background-color: white;
+}
+
+#img {
+  height: 20rem;
+  width: 30rem;
+  border: 1px solid black;
+}
+
+#btns {
+  margin: 1rem 0 0 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+#help {
+  font-size: 10px;
+  margin-top: 0.5rem;
+  color: rgb(151, 151, 151);
+}
+
+.scores1,
+.scores2 {
+  padding: 0 0.5rem;
+}
+
+#char-1, #char-2, #char-3{
+  position: absolute;
+  height: 200px;
+  top: 15rem;
+}
+
+#char-1{
+  left: 33rem;
+}
+#char-2{
+  left: 47rem;
+}
+#char-3{
+  left: 35rem;
+}
+
+
+.m{
+  margin-left: 500rem;
+}
+
+.hide{
+  display: none;
+}
+
+#health1, #health2{
+  width: 25rem;
+}
+
+
+progress::-webkit-progress-value {
+  background: rgb(68, 141, 26);
+}
+
+progress::-webkit-progress-bar {
+  background: rgb(184, 43, 43);
+}
+
+.map{
+  position: absolute;
+  width: 5rem;
+}
+
+.classic{
+  top: 8rem;
+  left: 61rem;
+}
+
+.tokyo{
+  top: 11rem;
+  left: 61rem;
+}
+
+.forest{
+  top: 14rem;
+  left: 61rem;
+}
+.inferno{
+  top: 17rem;
+  left: 61rem;
+}
+
+#volume{
+  position: absolute;
+  width: 2rem;
+  top: 45rem;
+  left: 61rem;
+  -webkit-filter: grayscale(1) invert(1);
+  filter: grayscale(1) invert(1);
+}
+
+#settings{
+  position: absolute;
+  width: 2rem;
+  top: 42rem;
+  left: 61rem;
+  -webkit-filter: grayscale(1) invert(1);
+  filter: grayscale(1) invert(1);
+}
