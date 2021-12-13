@@ -27,7 +27,6 @@ let health2 = document.getElementById("health2");
 
 
 
-
 // * Player Object
 const Player = {
   hit: (hitAudio) => {
@@ -72,7 +71,6 @@ let iclassic = 'https://www.andersonkenya1.net/uploads/monthly_2021_04/Special_C
 let itokyo = 'https://external-preview.redd.it/kPoQNQRrbmCkWYDOT5SOo09uwTvbmAiMyqR9Xgk_71w.png?auto=webp&s=668af9e5f78f74e0a5373d65e38404c7f6e07249'
 let iforest = 'https://i.pinimg.com/originals/b7/1b/50/b71b50a335dbf28f68bbd1e774a54729.png'
 let iinferno = 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/272dadfd-f3ec-4b8a-aca5-1c7af06dbcec/d6wmjpx-4e9f594f-4e8b-40f8-886a-68d5b1a51c97.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI3MmRhZGZkLWYzZWMtNGI4YS1hY2E1LTFjN2FmMDZkYmNlY1wvZDZ3bWpweC00ZTlmNTk0Zi00ZThiLTQwZjgtODg2YS02OGQ1YjFhNTFjOTcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0._uaeJc6s-OV9hUq3V4em_MjF7UOcQWuICyQMAuzEiEg'
-
 
 
 // * VOLUME
@@ -175,6 +173,11 @@ settings.addEventListener('click', () => {
 
 //* New Game
 newGame.addEventListener("click", () => {
+  title.innerText = 'BOXER PUNCH PUNCH!!!'
+  punch1.classList.add("hide");
+  punch2.classList.add("m");
+  punch3.classList.add("m")
+  img.src = 'https://64.media.tumblr.com/tumblr_m9806hwDBZ1r0ralmo1_500.gifv'
   for (let di of dis){
     di.disabled = false
 }
@@ -291,6 +294,7 @@ if (e.key == "l") {
     title.innerText = "PLAYER 2 WINS!!!!";
     player2.style.color = "green";
     player1.style.color = "red";
+    isGameOver = true
     }
 }
 }});
