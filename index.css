@@ -52,6 +52,8 @@ h3 {
   width: 30rem;
   box-shadow: 0.5rem 0.5rem 2rem 1rem rgba(0, 0, 0, 0.26);
   background-color: white;
+  margin-left: 33.5%;
+  z-index: -1;
 }
 
 #img {
@@ -78,7 +80,7 @@ h3 {
 }
 
 #char-1, #char-2, #char-3{
-  position: absolute;
+  position: fixed;
   height: 200px;
   top: 15rem;
 }
@@ -116,7 +118,7 @@ progress::-webkit-progress-bar {
 }
 
 .map{
-  position: absolute;
+  position: fixed;
   width: 5rem;
 }
 
@@ -140,7 +142,7 @@ progress::-webkit-progress-bar {
 }
 
 #volume{
-  position: absolute;
+  position: fixed;
   width: 2rem;
   top: 45rem;
   left: 61rem;
@@ -149,7 +151,7 @@ progress::-webkit-progress-bar {
 }
 
 #settings{
-  position: absolute;
+  position: fixed;
   width: 2rem;
   top: 42rem;
   left: 61rem;

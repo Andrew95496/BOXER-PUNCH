@@ -1,3 +1,5 @@
+alert('NOISE ALERT!!!!\nOptimized for Macbook Air 13in\n')
+
 const img = document.getElementById("img");
 const title = document.getElementById("inner-title");
 
@@ -26,6 +28,15 @@ let health1 = document.getElementById("health1");
 let health2 = document.getElementById("health2");
 
 
+
+function openWin() {
+  myWindow = window.open("", "", "width=100, height=100");
+ }
+ 
+ function resizeWin() {
+    myWindow.resizeTo(250, 250);                            
+     myWindow.focus();                                     
+ }
 
 // * Player Object
 const Player = {
@@ -73,10 +84,24 @@ let iforest = 'https://i.pinimg.com/originals/b7/1b/50/b71b50a335dbf28f68bbd1e77
 let iinferno = 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/272dadfd-f3ec-4b8a-aca5-1c7af06dbcec/d6wmjpx-4e9f594f-4e8b-40f8-886a-68d5b1a51c97.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI3MmRhZGZkLWYzZWMtNGI4YS1hY2E1LTFjN2FmMDZkYmNlY1wvZDZ3bWpweC00ZTlmNTk0Zi00ZThiLTQwZjgtODg2YS02OGQ1YjFhNTFjOTcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0._uaeJc6s-OV9hUq3V4em_MjF7UOcQWuICyQMAuzEiEg'
 
 
-// * VOLUME
+// * VOLUME & MUSIC
 isMuted = false
 mainMuted = false
 
+count = 0
+let music = ['music/BICEP _ APRICOTS (Official Video).mp3', 'music/Through The Fire And Flames.mp3', "music/Saint's Row The Third Garage_Crib_Rimjobs Soundtrack [BEST QUALITY].mp3"]
+document.addEventListener('keypress', (e) => {
+  
+  if (count > 2){
+    count = 0
+  }
+  if (e.key == 'b'){
+    audio.src = music[count]
+    audio.play()
+    console.log(music[count]);
+    count+= 1
+  }
+})
 
 // main music
 const audio = new Audio("./music/Saint's Row The Third Garage_Crib_Rimjobs Soundtrack [BEST QUALITY].mp3")
