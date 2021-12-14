@@ -158,3 +158,23 @@ progress::-webkit-progress-bar {
   -webkit-filter: grayscale(1) invert(1);
   filter: grayscale(1) invert(1);
 }
+
+@media screen and (max-width: 1330px) {
+  body {
+    display: none;
+  }
+
+  html{
+    background: url('https://media4.giphy.com/media/oYQ9HRm5Mo7VXeMNVR/giphy.gif?cid=ecf05e470d9ka72nt5rrmcp6z3imsqrvra874v9mipf7nq8c&rid=giphy.gif&ct=g');
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1556px) {
+  body {
+    display: none;
+  }
+  html{
+    background: url('https://media4.giphy.com/media/oYQ9HRm5Mo7VXeMNVR/giphy.gif?cid=ecf05e470d9ka72nt5rrmcp6z3imsqrvra874v9mipf7nq8c&rid=giphy.gif&ct=g');
+    background-size: cover;
+  }
+}

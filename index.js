@@ -1,5 +1,19 @@
 alert('NOISE ALERT!!!!\nOptimized for Macbook Air 13in\n')
 
+window.addEventListener('load', () => {
+  console.log('window');
+  if (window.innerWidth < 1331) {
+    alert('Screen Size too small\nNeeds to be between 1330px and 1555px')
+    console.log(window.innerWidth);
+}
+
+if (window.innerWidth > 1555) {
+    alert('Screen Size too Big\nNeeds to be between 1330px and 1555px')
+    console.log(window.innerWidth);
+}
+})
+
+
 const img = document.getElementById("img");
 const title = document.getElementById("inner-title");
 
@@ -28,15 +42,6 @@ let health1 = document.getElementById("health1");
 let health2 = document.getElementById("health2");
 
 
-
-function openWin() {
-  myWindow = window.open("", "", "width=100, height=100");
- }
- 
- function resizeWin() {
-    myWindow.resizeTo(250, 250);                            
-     myWindow.focus();                                     
- }
 
 // * Player Object
 const Player = {
@@ -192,7 +197,7 @@ inferno.addEventListener('click', () => {
 
 //* Settings
 settings.addEventListener('click', () => {
-  alert('"a": Player 1\n"l": Player 2\n"m": Mute Music\n"n": Unmute Music')
+  alert('"a": Player 1\n"l": Player 2\n"m": Mute Music\n"n": Unmute Music\n"b": Change Music')
 })
 
 

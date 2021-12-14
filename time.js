@@ -22,4 +22,3 @@ if (time >= 20 || time <= 5){
     document.body.style.backgroundSize = "cover"
 
 }
-
